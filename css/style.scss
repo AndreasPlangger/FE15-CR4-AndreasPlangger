@@ -10,7 +10,7 @@ span.logo {
 .hero-image {
 
     width: 100%;
-    height: 20vh;
+    height: 33vh;
     background-image: url("https://cdn.pixabay.com/photo/2020/02/27/14/05/planner-4884740_1280.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -25,5 +25,55 @@ span.logo {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(218, 213, 213);
+    color: rgb(8, 8, 8);
+}
+
+.left{
+    float:left;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-left: 5rem;
+}
+
+.right{
+    float:right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-right: 5rem;
+}
+
+.row.justify-content-center.p-5.g-4.clearfloat {
+    clear: left;
+}
+
+.p-5 {
+    padding: 2rem 0rem 2rem 0rem!important;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.border-primary {
+    border-color: #fafafa!important;
+    box-shadow: 5px 0px 10px 1px #888888;
+}
+
+.img-fluid {
+    max-width: 90%;
+    height: auto;
+}
+.card-left{
+    background-color: turquoise;
+    color: white;
+    float:left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1vw 1vw 1vw 1vw;
+}
+
+.card-right{
+    float:right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1vw 1vw 1vw 1vw;
 }

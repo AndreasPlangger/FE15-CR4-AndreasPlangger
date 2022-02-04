@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPlanner</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -67,151 +71,178 @@
     </div>
 
     <!-- WEEKLY TASKS -->
-    <h1 class="weektask">Weekly tasks</h1>
-    <div class="row justify-content-center p-5 g-4">
+    <div>
+        <span class="right">Right aligned<i class="fas fa-sort-amount-up"></i></span><span class="left">Left aligned
+        </span>
+    </div>
 
+    <div class="row justify-content-center p-5 g-4 clearfloat">
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+
             <!-- TASK 1 -->
-            <div class="card h-100">
-
-                <img src="img/art_1_giveon.jpeg" class="card-img-top" alt="give_on" />
-                <div class="card-body">
-                    <h5 class="artist card-title">Give On</h5>
-                    <div class="card-date ">
-                        <p class="month">Sept</p>
-                        <p>6</p>
-
+            <div class="card text-center border border-primary shadow-0 box" style="background-color:#ffffff;">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <div>
+                        <span class="card-right"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-ellipsis-v"></i></span><span class="card-left">Task</span>
                     </div>
-
-                    <p class="card-text">
-
-                        “His deep, suave voice is rare in today’s musical landscape. Failing to embrace his baritone as
-                        a teenager, he finally found his way by listening to 20th century crooners. Full of retro
-                        inspiration and modern sounds, his latest album confirms his place as the crooner of our
-                        generation.”
-                    </p>
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Price: 100€</small>
+                <div class="card-body">
+                    <h5 class="card-title">Take the dog for a walk</h5>
+                    <p class="card-text">
+                        Task description.
+                    </p>
+                    <hr>
+                    <p><i class="fas fa-exclamation-triangle"></i> Priority level:</p>
+                    <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+                    <hr>
+                    <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
+                    <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
                 </div>
             </div>
         </div>
 
         <!-- TASK 2 -->
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <div class="card h-100">
-                <img src="img/art_2_the_lathums.jpeg" class="card-img-top" alt="the_lathums" />
-                <div class="card-body">
-                    <h5 class="card-title">The Lathums</h5>
-                    <div class="card-date">
-                        <p class="month">Sept</p>
-                        <p>6</p>
+            <div class="card text-center border border-primary shadow-0 " style="background-color:#ffffff;">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <div>
+                        <span class="card-right"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-ellipsis-v"></i></span><span class="card-left">Task</span>
                     </div>
-
-                    <p class="card-text">
-                        “A real English rock band just the way we like them, who cut their teeth playing in their local
-                        pub in Wigan before building up a large fanbase on social networks. They’ve even been hailed by
-                        British indie rock legends like The Verve and The Coral.”
-                    </p>
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Price: 110€</small>
+                <div class="card-body">
+                    <h5 class="card-title">Take the dog for a walk</h5>
+                    <p class="card-text">
+                        Task description.
+                    </p>
+                    <hr>
+                    <p><i class="fas fa-exclamation-triangle"></i> Priority level:</p>
+                    <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+                    <hr>
+                    <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
+                    <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
                 </div>
             </div>
         </div>
 
         <!-- TASK 3 -->
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <div class="card h-100">
-                <img src="img/art_3_yseult.jpeg" class="card-img-top" alt="yseult" />
-                <div class="card-body">
-                    <h5 class="card-title">Yseult</h5>
-                    <div class="card-date">
-                        <p class="month">Sept</p>
-                        <p>6</p>
+            <div class="card text-center border border-primary shadow-0 " style="background-color:#ffffff;">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <div>
+                        <span class="card-right"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-ellipsis-v"></i></span><span class="card-left">Task</span>
                     </div>
-
-                    <p class="card-text">
-                        “She is perhaps the most moving French artist of her generation. How can you not get goosebumps
-                        when listening to “Corps”? Yseult is a blast of raw sincerity, sung without artifice, between
-                        the lyricism of French song and the urban phrasing of trap.”
-                    </p>
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Price: 120€</small>
+                <div class="card-body">
+                    <h5 class="card-title">Take the dog for a walk</h5>
+                    <p class="card-text">
+                        Task description.
+                    </p>
+                    <hr>
+                    <p><i class="fas fa-exclamation-triangle"></i> Priority level:</p>
+                    <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+                    <hr>
+                    <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
+                    <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
                 </div>
             </div>
         </div>
-
     </div>
 
     <!--TASK 4  -->
     <div class="row justify-content-center p-5 g-4">
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <div class="card h-100">
-                <img src="img/art_4_yebba.jpeg" class="card-img-top" alt="yebba" />
-                <div class="card-body">
-                    <h5 class="card-title">Yebba</h5>
-                    <div class="card-date">
-                        <p class="month">Sept</p>
-                        <p>7</p>
+            <div class="card text-center border border-primary shadow-0 " style="background-color:#ffffff;">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <div>
+                        <span class="card-right"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-ellipsis-v"></i></span><span class="card-left">Task</span>
                     </div>
-
-                    <p class="card-text">
-                        “She still has few singles to her name, but she already skilfully navigates between nu-jazz
-                        delicacies and mainstream collaborations. We’ve been following her for quite a while and we were
-                        very happy to see her song “Distance” on Barack Obama’s latest playlist. We can’t wait to find
-                        out what paths she will explore this year…”
-                    </p>
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Price: 130€</small>
+                <div class="card-body">
+                    <h5 class="card-title">Take the dog for a walk</h5>
+                    <p class="card-text">
+                        Task description.
+                    </p>
+                    <hr>
+                    <p><i class="fas fa-exclamation-triangle"></i> Priority level:</p>
+                    <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+                    <hr>
+                    <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
+                    <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
                 </div>
             </div>
         </div>
 
         <!-- TASK  5 -->
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <div class="card h-100">
-                <img src="img/art_5_chanel_tres.jpeg" class="card-img-top" alt="chanel_tres" />
-                <div class="card-body">
-                    <h5 class="card-title">Channel Tres</h5>
-                    <div class="card-date">
-                        <p class="month">Sept</p>
-                        <p>7</p>
+            <div class="card text-center border border-primary shadow-0 " style="background-color:#ffffff;">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <div>
+                        <span class="card-right"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-ellipsis-v"></i></span><span class="card-left">Task</span>
                     </div>
-
-                    <p class="card-text">
-                        “Channel Tres unleashes the emotions of hip-hop and electro fans alike. As a rapper, singer and
-                        producer, he fuses Detroit techno, Chicago house and west coast hip-hop into an ultra-suave
-                        groove. He has collaborated with Tyler, The Creator, among others.”
-                    </p>
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Price: 140€</small>
+                <div class="card-body">
+                    <h5 class="card-title">Take the dog for a walk</h5>
+                    <p class="card-text">
+                        Task description.
+                    </p>
+                    <hr>
+                    <p><i class="fas fa-exclamation-triangle"></i> Priority level:</p>
+                    <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+                    <hr>
+                    <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
+                    <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
                 </div>
             </div>
         </div>
         <!-- TASK  6 -->
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <div class="card h-100">
-                <img src="img/art_6_lila_iké.jpeg" class="card-img-top" alt="lila_ike" />
-                <div class="card-body">
-                    <h5 class="card-title">Lila Iké</h5>
-                    <div class="card-date">
-                        <p class="month">Sept</p>
-                        <p>7</p>
+            <div class="card text-center border border-primary shadow-0 " style="background-color:#ffffff;">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <div>
+                        <span class="card-right"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-ellipsis-v"></i></span><span class="card-left">Task</span>
                     </div>
-
-                    <p class="card-text">
-                        “She has a very personal way of bringing different influences into the mix, while remaining true
-                        to the fundamentals of reggae. From one track to the next, you can feel elements of soul,
-                        hip-hop, dancehall and pop. In the middle of it all, her voice moves between edgy flows and
-                        soaring melodies.”
-                    </p>
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Price: 150€</small>
+                <div class="card-body">
+                    <h5 class="card-title">Take the dog for a walk</h5>
+                    <p class="card-text">
+                        Task description.
+                    </p>
+                    <hr>
+                    <p><i class="fas fa-exclamation-triangle"></i> Priority level:</p>
+                    <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+                    <hr>
+                    <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
+                    <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
                 </div>
             </div>
         </div>
@@ -220,72 +251,84 @@
     <!-- TASK  7 -->
     <div class="row justify-content-center p-5 g-4">
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <div class="card h-100">
-                <img src="img/art_7_sault.jpeg" class="card-img-top" alt="sault" />
-                <div class="card-body">
-                    <h5 class="card-title">Sault</h5>
-                    <div class="card-date">
-                        <p class="month">Sept</p>
-                        <p>8</p>
+            <div class="card text-center border border-primary shadow-0 " style="background-color:#ffffff;">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <div>
+                        <span class="card-right"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-ellipsis-v"></i></span><span class="card-left">Task</span>
                     </div>
-
-                    <p class="card-text">
-                        “This quasi-anonymous collective is shrouded in mystery. All we know is that the producer Inflo
-                        (Michael Kiwanuka, Little Simz) is at the origin of the project. Their latest album, released
-                        last year during the Black Lives Matter protests, is a gem from start to finish, politically
-                        aware, dark and upbeat at the same time.”
-                    </p>
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Price: 160€</small>
+                <div class="card-body">
+                    <h5 class="card-title">Take the dog for a walk</h5>
+                    <p class="card-text">
+                        Task description.
+                    </p>
+                    <hr>
+                    <p><i class="fas fa-exclamation-triangle"></i> Priority level:</p>
+                    <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+                    <hr>
+                    <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
+                    <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
                 </div>
             </div>
         </div>
 
         <!-- TASK  8 -->
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <div class="card h-100">
-                <img src="img/art_8_steam_down.jpeg" class="card-img-top" alt="steam_down" />
-                <div class="card-body">
-                    <h5 class="card-title">Steam down</h5>
-                    <div class="card-date">
-                        <p class="month">Sept</p>
-                        <p>8</p>
+            <div class="card text-center border border-primary shadow-0 " style="background-color:#ffffff;">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <div>
+                        <span class="card-right"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-ellipsis-v"></i></span><span class="card-left">Task</span>
                     </div>
-
-                    <p class="card-text">
-                        “Steam Down was originally the name of a night that electrified South East London every week.
-                        Gradually, the buzz the collective created formed a following. Led by multi-instrumentalist
-                        Ahnansé, they should release their first EP this year, after a handful of singles combining
-                        jazz, soul and hip-hop.”
-                    </p>
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Price: 170€</small>
+                <div class="card-body">
+                    <h5 class="card-title">Take the dog for a walk</h5>
+                    <p class="card-text">
+                        Task description.
+                    </p>
+                    <hr>
+                    <p><i class="fas fa-exclamation-triangle"></i> Priority level:</p>
+                    <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+                    <hr>
+                    <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
+                    <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
                 </div>
             </div>
         </div>
 
         <!-- TASK  9 -->
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <div class="card h-100">
-                <img src="img/art_9_jc_stewart.jpeg" class="card-img-top" alt="jc_stewart" />
-                <div class="card-body">
-                    <h5 class="card-title">JC Stewart</h5>
-                    <div class="card-date">
-                        <p class="month">Sept</p>
-                        <p>8</p>
+            <div class="card text-center border border-primary shadow-0 " style="background-color:#ffffff;">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <div>
+                        <span class="card-right"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                class="fas fa-ellipsis-v"></i></span><span class="card-left">Task</span>
                     </div>
-
-                    <p class="card-text">
-                        “Most of his songs are released in two versions, one being purely acoustic. And with good
-                        reason: all he needs is his voice, his guitar and his heartfelt lyrics to woo. Together with his
-                        buddy Lewis Capaldi, they share a madcap wit, very popular on Instagram, and a knack for
-                        composing devilishly effective tunes.”
-                    </p>
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/111.webp" class="img-fluid" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </a>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted">Price: 180€</small>
+                <div class="card-body">
+                    <h5 class="card-title">Take the dog for a walk</h5>
+                    <p class="card-text">
+                        Task description.
+                    </p>
+                    <hr>
+                    <p><i class="fas fa-exclamation-triangle"></i> Priority level:</p>
+                    <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+                    <hr>
+                    <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
+                    <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
                 </div>
             </div>
         </div>
