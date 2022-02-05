@@ -1,0 +1,58 @@
+let taskList = 
+
+`[
+    {
+        "taskName": "Shopping",
+        "image": "img/market.jpeg",
+        "description": "Shop for weekly groceries at the market.",
+        "importance": 6
+    },
+    {
+        "taskName": "Yoga",
+        "image": "img/yoga.jpeg",
+        "description": ".",
+        "importance": 0
+    },
+    {
+        "taskName": "Piano lesson",
+        "image": "img/piano.jpg",
+        "description": ".",
+        "importance": 0
+    },
+    {
+        "taskName": "Walk the dog",
+        "image": "img/dog.jpeg",
+        "description": ".",
+        "importance": 3
+    },
+    {
+        "taskName": "Excercise",
+        "image": "img/exercise.jpg",
+        "description": ".",
+        "importance": 0
+    },
+    {
+        "taskName": "Laundry",
+        "image": "img/laundry.jpg",
+        "description": ".",
+        "importance": 0
+    },
+    {
+        "taskName": "Meet friends",
+        "image": "img/meet_friends.jpg",
+        "description": ".",
+        "importance": 0
+    },
+    {
+        "taskName": "Swimming",
+        "image": "img/swimming.jpg",
+        "description": ".",
+        "importance": 0
+    },
+    {
+        "taskName": "Reading",
+        "image": "img/reading.jpg",
+        "description": ".",
+        "importance": 0
+    }
+]`;
