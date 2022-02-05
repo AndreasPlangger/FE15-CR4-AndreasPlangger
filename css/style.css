@@ -62,7 +62,9 @@ span.logo {
 
 .img-fluid {
   max-width: 90%;
-  height: auto;
+  height: 18vh;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .card-left {
@@ -79,5 +81,9 @@ span.logo {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 1vw 1vw 1vw 1vw;
+}
+
+.card-text {
+  height: 6vh;
 }
 /*# sourceMappingURL=style.css.map */
