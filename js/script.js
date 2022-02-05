@@ -37,20 +37,6 @@ for (let i = 0; i < 3; i++) {
     </div>`;
 }
 
-var button = document.getElementsByClassName('increment-btn');
-
-
-for (let i = 0; i < 3; i++) {
-    button[i].addEventListener('click', function () {
-        increment(i)
-    }, false);
-}
-function increment(i) {
-    console.log(tasks, i);
-    tasks[i].importance += 1;
-    var counter = document.getElementById(`${i}`);
-    counter.innerHTML = tasks[i].importance
-}
 for (let i = 3; i < 6; i++) {
 
     // var classbt = "bg-danger";
@@ -75,8 +61,8 @@ for (let i = 3; i < 6; i++) {
             <p class="card-text">${tasks[i].description}
             </p>
             <hr>
-            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <span class="${classbt}">${tasks[i].importance}</span></p>
-            <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <button type="button" class="increment-btn ${classbt} counter"><span id="${i}">${tasks[i].importance}</span></button></p>
+            <p><i class="far fa-calendar-alt"></i> Deadline: ${tasks[i].deadline}</p>
             <hr>
             <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
             <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
@@ -107,12 +93,26 @@ for (let i = 6; i < 9; i++) {
             <p class="card-text">${tasks[i].description}
             </p>
             <hr>
-            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <span class="${classbt}">${tasks[i].importance}</span></p>
-            <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <button type="button" class="increment-btn ${classbt} counter"><span id="${i}">${tasks[i].importance}</span></button></p>
+            <p><i class="far fa-calendar-alt"></i> Deadline: ${tasks[i].deadline}</p>
             <hr>
             <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
             <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
         </div>
     </div>
     </div>`;
+}
+
+var button = document.getElementsByClassName('increment-btn');
+console.log(button)
+
+for (let i = 0; i < 9; i++) {
+    button[i].addEventListener('click', function () {
+        increment(i)
+    }, false);
+}
+function increment(i) {
+    tasks[i].importance += 1;
+    var counter = document.getElementById(`${i}`);
+    counter.innerHTML = tasks[i].importance
 }
