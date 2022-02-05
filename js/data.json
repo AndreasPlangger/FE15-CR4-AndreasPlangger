@@ -5,54 +5,63 @@ let taskList =
         "taskName": "Shopping",
         "image": "img/market.jpeg",
         "description": "Shop for weekly groceries at the market.",
-        "importance": 6
+        "deadline": "07.02.2022",
+        "importance": 4
     },
     {
         "taskName": "Yoga",
         "image": "img/yoga.jpeg",
-        "description": ".",
-        "importance": 0
+        "description": "Do Hatha yoga for 1 and a half hour on the roof.",
+        "deadline": "07.02.2022",
+        "importance": 1
     },
     {
         "taskName": "Piano lesson",
         "image": "img/piano.jpg",
-        "description": ".",
-        "importance": 0
+        "description": "Call teacher and make appointment for next weekend.",
+        "deadline": "10.02.2022",
+        "importance": 3
     },
     {
         "taskName": "Walk the dog",
         "image": "img/dog.jpeg",
-        "description": ".",
-        "importance": 3
+        "description": "Take dog for a half hour walk to Stadtpark.",
+        "deadline": "06.02.2022",
+        "importance": 5
     },
     {
         "taskName": "Excercise",
         "image": "img/exercise.jpg",
-        "description": ".",
-        "importance": 0
+        "description": "Lift weights for 45 minutes and do cardio for 30 minutes at JH Fitness.",
+        "deadline": "11.02.2022",
+        "importance": 2
     },
     {
         "taskName": "Laundry",
         "image": "img/laundry.jpg",
-        "description": ".",
-        "importance": 0
+        "description": "Wash and iron white and color garments. Handwash delicate pieces.",
+        "deadline": "07.02.2022",
+        "importance": 4
     },
     {
         "taskName": "Meet friends",
         "image": "img/meet_friends.jpg",
-        "description": ".",
-        "importance": 0
+        "description": "Meet with Mark and Joan for a coffee at Spencers.",
+        "deadline": "10.02.2022",
+        "importance": 3
     },
     {
         "taskName": "Swimming",
         "image": "img/swimming.jpg",
-        "description": ".",
-        "importance": 0
+        "description": "Swim lanes for 1 hour at Brigittenauer Bad.",
+        "deadline": "12.02.2022",
+        "importance": 2
     },
     {
         "taskName": "Reading",
         "image": "img/reading.jpg",
-        "description": ".",
-        "importance": 0
+        "description": "Continue reading: 'The Snow of Kilimanjaro'.",
+        "deadline": "12.02.2022",
+        "importance": 1
     }
 ]`;

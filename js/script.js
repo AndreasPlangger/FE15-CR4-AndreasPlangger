@@ -28,7 +28,7 @@ for (let i = 0; i < 3; i++)
             </p>
             <hr>
             <p><i class="fas fa-exclamation-triangle"></i> Priority level: <span class="${classbt}">${tasks[i].importance}</span></p>
-            <p><i class="far fa-calendar-alt"></i> Deadline: </p>
+            <p><i class="far fa-calendar-alt"></i> Deadline: ${tasks[i].deadline}</p>
             <hr>
             <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
             <button type="button" class="btn btn-success"><i class="far fa-check-circle"></i> Done</button>
