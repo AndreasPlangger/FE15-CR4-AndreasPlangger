@@ -27,7 +27,7 @@ for (let i = 0; i < 3; i++)
             <p class="card-text">${tasks[i].description}
             </p>
             <hr>
-            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <span id="priority" class="${classbt}"> ${tasks[i].importance}</span></p>
+            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <button type="button" class="increment-btn ${classbt} counter">${tasks[i].importance}</button></p>
             <p><i class="far fa-calendar-alt"></i> Deadline: ${tasks[i].deadline}</p>
             <hr>
             <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
@@ -35,6 +35,14 @@ for (let i = 0; i < 3; i++)
         </div>
     </div>
     </div>`;
+
+
+var $button = document.querySelector('.increment-btn');
+var $counter = document.querySelector('.counter');
+
+$button.addEventListener('click', function () {
+    $counter.value = parseInt($counter.value) + 1; // `parseInt` converts the `value` from a string to a number
+}, false);
 
 for (let i = 3; i < 6; i++) {
 
