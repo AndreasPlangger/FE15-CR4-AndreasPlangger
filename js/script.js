@@ -27,7 +27,7 @@ for (let i = 0; i < 3; i++)
             <p class="card-text">${tasks[i].description}
             </p>
             <hr>
-            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <span class="${classbt}">${tasks[i].importance}</span></p>
+            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <span id="priority" class="${classbt}"> ${tasks[i].importance}</span></p>
             <p><i class="far fa-calendar-alt"></i> Deadline: ${tasks[i].deadline}</p>
             <hr>
             <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
@@ -35,7 +35,6 @@ for (let i = 0; i < 3; i++)
         </div>
     </div>
     </div>`;
-
 
 for (let i = 3; i < 6; i++) {
 
@@ -103,4 +102,3 @@ for (let i = 6; i < 10; i++) {
     </div>
     </div>`;
 }
-

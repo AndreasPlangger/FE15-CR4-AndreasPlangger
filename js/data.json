@@ -6,7 +6,7 @@ let taskList =
         "image": "img/market.jpeg",
         "description": "Shop for weekly groceries at the market.",
         "deadline": "07.02.2022",
-        "importance": 4
+        "importance": 1
     },
     {
         "taskName": "Yoga",
@@ -20,42 +20,42 @@ let taskList =
         "image": "img/piano.jpg",
         "description": "Call teacher and make appointment for next weekend.",
         "deadline": "10.02.2022",
-        "importance": 3
+        "importance": 1
     },
     {
         "taskName": "Walk the dog",
         "image": "img/dog.jpeg",
         "description": "Take dog for a half hour walk to Stadtpark.",
         "deadline": "06.02.2022",
-        "importance": 5
+        "importance": 1
     },
     {
         "taskName": "Excercise",
         "image": "img/exercise.jpg",
         "description": "Lift weights for 45 minutes and do cardio for 30 minutes at JH Fitness.",
         "deadline": "11.02.2022",
-        "importance": 2
+        "importance": 1
     },
     {
         "taskName": "Laundry",
         "image": "img/laundry.jpg",
         "description": "Wash and iron white and color garments. Handwash delicate pieces.",
         "deadline": "07.02.2022",
-        "importance": 4
+        "importance": 1
     },
     {
         "taskName": "Meet friends",
         "image": "img/meet_friends.jpg",
         "description": "Meet with Mark and Joan for a coffee at Spencers.",
         "deadline": "10.02.2022",
-        "importance": 3
+        "importance": 1
     },
     {
         "taskName": "Swimming",
         "image": "img/swimming.jpg",
         "description": "Swim lanes for 1 hour at Brigittenauer Bad.",
         "deadline": "12.02.2022",
-        "importance": 2
+        "importance": 1
     },
     {
         "taskName": "Reading",
