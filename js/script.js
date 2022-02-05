@@ -2,7 +2,7 @@ var classbt = "bg-success";
 
 let tasks = JSON.parse(taskList);
 
-for (let i = 0; i < 3; i++)
+for (let i = 0; i < 3; i++) {
     // {
     //     if (2 <= tasks[i].importance <= 3) {
     //         classbt = "bg-warning"
@@ -27,7 +27,7 @@ for (let i = 0; i < 3; i++)
             <p class="card-text">${tasks[i].description}
             </p>
             <hr>
-            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <button type="button" class="increment-btn ${classbt} counter">${tasks[i].importance}</button></p>
+            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <button type="button" class="increment-btn ${classbt} counter"><span id="${i}">${tasks[i].importance}</span></button></p>
             <p><i class="far fa-calendar-alt"></i> Deadline: ${tasks[i].deadline}</p>
             <hr>
             <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
@@ -35,15 +35,22 @@ for (let i = 0; i < 3; i++)
         </div>
     </div>
     </div>`;
+}
+
+var button = document.getElementsByClassName('increment-btn');
 
 
-var $button = document.querySelector('.increment-btn');
-var $counter = document.querySelector('.counter');
-
-$button.addEventListener('click', function () {
-    $counter.value = parseInt($counter.value) + 1; // `parseInt` converts the `value` from a string to a number
-}, false);
-
+for (let i = 0; i < 3; i++) {
+    button[i].addEventListener('click', function () {
+        increment(i)
+    }, false);
+}
+function increment(i) {
+    console.log(tasks, i);
+    tasks[i].importance += 1;
+    var counter = document.getElementById(`${i}`);
+    counter.innerHTML = tasks[i].importance
+}
 for (let i = 3; i < 6; i++) {
 
     // var classbt = "bg-danger";
@@ -77,12 +84,11 @@ for (let i = 3; i < 6; i++) {
     </div>
     </div>`;
 }
-for (let i = 6; i < 10; i++) {
+for (let i = 6; i < 9; i++) {
 
     // var classbt = "bg-danger";
     // if (books[i].read == "true") {
     //     classbt = "bg-success";
-
     document.getElementById('row3').innerHTML += `
     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
     <div class="card text-center border border-primary shadow-0" style="background-color:#ffffff;">
