@@ -64,18 +64,19 @@ span.logo {
 }
 .card-left{
     background-color: turquoise;
+    border-radius: 5px;
     color: white;
     float:left;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 1vw 1vw 1vw 1vw;
+    font-size: 1.3rem;
+    margin: 1vw 0 1vw 0;
+    padding: 0 1vw 0 1vw;
 }
 
 .card-right{
     float:right;
     font-size: 1.5rem;
     font-weight: bold;
-    margin: 1vw 1vw 1vw 1vw;
+    margin: 1vw 0 1vw 0;
 }
 .card-text{
 height: 6vh;
