@@ -27,25 +27,19 @@ span.logo {
     transform: translate(-50%, -50%);
     color: rgb(8, 8, 8);
 }
-
+.alpha{
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw;
+}
 .left{
-    float:left;
     font-size: 1.8rem;
     font-weight: bold;
-    padding-top: 1rem;
-    padding-left: 5rem;
 }
 
 .right{
-    float:right;
     font-size: 1.5rem;
     font-weight: bold;
-    padding-top: 1rem;
-    padding-right: 5rem;
-}
-
-.row.justify-content-center.p-5.g-4.clearfloat {
-    clear: left;
 }
 
 .p-5 {
