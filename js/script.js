@@ -8,9 +8,9 @@ for (let i = 0; i < 9; i++) {
     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
     <div class="card text-center border border-primary shadow-0" style="background-color:#ffffff;">
         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-            <div>
-                <span class="card-right"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-                        class="fas fa-ellipsis-v"></i></span><span class="card-left">Task</span>
+            <div class="topline">
+                <span class="card-left">Task</span>    
+                <span class="card-right"><i class="far fa-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-ellipsis-v"></i></span>
             </div>
             <img src="${tasks[i].image}" class="img-fluid" />
             <a href="#!">

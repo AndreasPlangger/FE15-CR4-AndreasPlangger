@@ -41,7 +41,12 @@ span.logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
+.topline{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
 .p-5 {
     padding: 2rem 0rem 2rem 0rem!important;
     margin-left: 5rem;
@@ -53,7 +58,7 @@ span.logo {
 }
 
 .img-fluid {
-    max-width: 90%;
+    max-width: 77%;
     height: 18vh;
     object-fit: fill;
 }
