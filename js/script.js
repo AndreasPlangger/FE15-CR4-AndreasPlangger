@@ -53,11 +53,11 @@ function increment(i) {
 
     var counter = document.getElementById(`${i}`);
     counter.innerHTML = tasks[i].importance;
-    sorttest
+    sortVal
 }
 
 
-function sorttest() {
+function sortVal() {
     tasks.sort((a, b) => a.importance - b.importance);
     console.log(tasks);
 }
