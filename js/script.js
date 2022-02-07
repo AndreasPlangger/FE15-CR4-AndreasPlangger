@@ -48,6 +48,9 @@ function increment(i) {
     if (tasks[i].importance > 3) {
         document.getElementsByClassName("increment-btn")[i].setAttribute("class", "increment-btn bg-danger");
     }
+    else if (tasks[i].importance > 1) {
+        document.getElementsByClassName("increment-btn")[i].setAttribute("class", "increment-btn bg-warning");
+    }
     var counter = document.getElementById(`${i}`);
     counter.innerHTML = tasks[i].importance;
     sorttest
