@@ -39,28 +39,40 @@ var button = document.getElementsByClassName('increment-btn');
 for (let i = 0; i < tasks.length; i++) {
     button[i].addEventListener('click', function () {
         increment(i)
-        color(i)
+        // color(i)
     }, false);
 }
 function increment(i) {
     tasks[i].importance += 1;
+    console.log(tasks[i].importance);
+    if (tasks[i].importance > 3) {
+        document.getElementsByClassName("increment-btn")[i].setAttribute("class", "increment-btn bg-danger");
+
+    }
     var counter = document.getElementById(`${i}`);
     counter.innerHTML = tasks[i].importance;
+    sorttest()
 }
 
-var colorc = document.getElementsByClassName('beta');
-
-for (let i = 0; i < tasks.length; i++) {
-
-    function color(i) {
-        if (colorc.outerText > 1 && colorc.outerText < 4) {
-            classbt = "bg-warning";
-        }
-        if (colorc.outerText > 4) {
-            classbt = "bg-danger";
-        }
-    }
+var val = document.getElementsByClassName('beta').outerText
+function sorttest() {
+    tasks.sort((a, b) => a.importance - b.importance);
+    console.log(tasks);
 }
+
+// var colorc = document.getElementsByClassName('beta');
+
+// for (let i = 0; i < tasks.length; i++) {
+
+//     function color(i) {
+//         if (colorc.outerText > 1 && colorc.outerText < 4) {
+//             classbt = "bg-warning";
+//         }
+//         if (colorc.outerText > 4) {
+//             classbt = "bg-danger";
+//         }
+//     }
+// }
 
 
 // for (let i = 0; i < tasks.length; i++) {
