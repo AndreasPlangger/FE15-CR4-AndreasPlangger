@@ -47,11 +47,10 @@ function increment(i) {
     console.log(tasks[i].importance);
     if (tasks[i].importance > 3) {
         document.getElementsByClassName("increment-btn")[i].setAttribute("class", "increment-btn bg-danger");
-
     }
     var counter = document.getElementById(`${i}`);
     counter.innerHTML = tasks[i].importance;
-    sorttest()
+    sorttest
 }
 
 var val = document.getElementsByClassName('beta').outerText
