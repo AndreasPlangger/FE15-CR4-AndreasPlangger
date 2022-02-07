@@ -39,7 +39,6 @@ var button = document.getElementsByClassName('increment-btn');
 for (let i = 0; i < tasks.length; i++) {
     button[i].addEventListener('click', function () {
         increment(i)
-        // color(i)
     }, false);
 }
 function increment(i) {
@@ -51,16 +50,32 @@ function increment(i) {
     else if (tasks[i].importance > 1) {
         document.getElementsByClassName("increment-btn")[i].setAttribute("class", "increment-btn bg-warning");
     }
+
     var counter = document.getElementById(`${i}`);
     counter.innerHTML = tasks[i].importance;
     sorttest
 }
 
-var val = document.getElementsByClassName('beta').outerText
+
 function sorttest() {
     tasks.sort((a, b) => a.importance - b.importance);
     console.log(tasks);
 }
+
+// <button onclick="myFunction2()">Sort Numerically</button>
+
+// <p id="demo"></p>
+
+// <script>
+// const points = [40, 100, 1, 5, 25, 10];
+// document.getElementById("demo").innerHTML = points;
+
+// function myFunction2() {
+//   points.sort(function(a, b){return a - b});
+//   document.getElementById("demo").innerHTML = points;
+// }
+// </script>
+// var val = document.getElementsByClassName('beta').outerText
 
 // var colorc = document.getElementsByClassName('beta');
 
