@@ -60,7 +60,7 @@ span.logo {
 .img-fluid {
     max-width: 77%;
     height: 18vh;
-    object-fit: fill;
+    object-fit: contain;
 }
 .card-left{
     background-color: turquoise;

@@ -2,7 +2,7 @@ var classbt = "bg-success";
 
 let tasks = JSON.parse(taskList);
 
-for (let i = 0; i < 9; i++) {
+for (let i = 0; i < tasks.length; i++) {
 
     document.getElementById('row').innerHTML += `
     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
@@ -22,7 +22,7 @@ for (let i = 0; i < 9; i++) {
             <p class="card-text">${tasks[i].description}
             </p>
             <hr>
-            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <button type="button" class="increment-btn ${classbt} counter"><span id="${i}">${tasks[i].importance}</span></button></p>
+            <p><i class="fas fa-exclamation-triangle"></i> Priority level: <button type="button" class="increment-btn ${classbt} counter"><span class="beta" id="${i}">${tasks[i].importance}</span></button></p>
             <p><i class="far fa-calendar-alt"></i> Deadline: ${tasks[i].deadline}</p>
             <hr>
             <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete</button>
@@ -32,38 +32,45 @@ for (let i = 0; i < 9; i++) {
     </div>`;
 }
 
+
+
 var button = document.getElementsByClassName('increment-btn');
 
-for (let i = 0; i < 9; i++) {
+for (let i = 0; i < tasks.length; i++) {
     button[i].addEventListener('click', function () {
         increment(i)
+        color(i)
     }, false);
 }
 function increment(i) {
     tasks[i].importance += 1;
     var counter = document.getElementById(`${i}`);
     counter.innerHTML = tasks[i].importance;
+}
 
-    colorChange(tasks[i].importance);
+var colorc = document.getElementsByClassName('beta');
+
+for (let i = 0; i < tasks.length; i++) {
+
+    function color(i) {
+        if (colorc.outerText > 1 && colorc.outerText < 4) {
+            classbt = "bg-warning";
+        }
+        if (colorc.outerText > 4) {
+            classbt = "bg-danger";
+        }
+    }
 }
 
 
-
-
-
-
-// var span = document.getElementById(0);
-// console.log(span);
-// for (let i = 0; i < 3; i++) {
+// for (let i = 0; i < tasks.length; i++) {
 
 //     function colorChange(i) {
 //         if (tasks[i].importance > 1 && tasks[i].importance < 4) {
 //             classbt = "bg-warning";
 //         }
-
 //         if (tasks[i].importance > 4) {
 //             classbt = "bg-danger";
 //         }
 //     }
 // }
-// console.log(colorChange);
