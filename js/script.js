@@ -39,7 +39,6 @@ function output() {
 output();
 
 var button = document.getElementsByClassName('increment-btn');
-
 for (let i = 0; i < tasks.length; i++) {
     button[i].addEventListener('click', function () {
         increment(i)
@@ -61,59 +60,10 @@ function increment(i) {
 
     var counter = document.getElementById(`${i}`);
     counter.innerHTML = tasks[i].importance;
-
     sortVal
 }
-
-
 function sortVal() {
     tasks.sort((a, b) => b.importance - a.importance);
     output()
-
     console.log(tasks);
 }
-
-// function colorB() {
-
-// }
-// <button onclick="myFunction2()">Sort Numerically</button>
-
-// <p id="demo"></p>
-
-// <script>
-// const points = [40, 100, 1, 5, 25, 10];
-// document.getElementById("demo").innerHTML = points;
-
-// function myFunction2() {
-//   points.sort(function(a, b){return a - b});
-//   document.getElementById("demo").innerHTML = points;
-// }
-// </script>
-// var val = document.getElementsByClassName('beta').outerText
-
-// var colorc = document.getElementsByClassName('beta');
-
-// for (let i = 0; i < tasks.length; i++) {
-
-//     function color(i) {
-//         if (colorc.outerText > 1 && colorc.outerText < 4) {
-//             classbt = "bg-warning";
-//         }
-//         if (colorc.outerText > 4) {
-//             classbt = "bg-danger";
-//         }
-//     }
-// }
-
-
-// for (let i = 0; i < tasks.length; i++) {
-
-//     function colorChange(i) {
-//         if (tasks[i].importance > 1 && tasks[i].importance < 4) {
-//             classbt = "bg-warning";
-//         }
-//         if (tasks[i].importance > 4) {
-//             classbt = "bg-danger";
-//         }
-//     }
-// }
