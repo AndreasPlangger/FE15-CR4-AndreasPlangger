@@ -2,9 +2,13 @@ var classbt = "bg-success";
 
 let tasks = JSON.parse(taskList);
 
-for (let i = 0; i < tasks.length; i++) {
+function output() {
 
-    document.getElementById('row').innerHTML += `
+    document.getElementById('row').innerHTML = ``
+
+    for (let i = 0; i < tasks.length; i++) {
+
+        document.getElementById('row').innerHTML += `
     <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
     <div class="card text-center border border-primary shadow-0" style="background-color:#ffffff;">
         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
@@ -30,9 +34,9 @@ for (let i = 0; i < tasks.length; i++) {
         </div>
     </div>
     </div>`;
+    }
 }
-
-
+output();
 
 var button = document.getElementsByClassName('increment-btn');
 
@@ -43,6 +47,10 @@ for (let i = 0; i < tasks.length; i++) {
 }
 function increment(i) {
     tasks[i].importance += 1;
+    if (tasks[i].importance > 5) {
+        tasks[i].importance = 0
+        document.getElementsByClassName("increment-btn")[i].setAttribute("class", "increment-btn bg-success");
+    }
     console.log(tasks[i].importance);
     if (tasks[i].importance > 3) {
         document.getElementsByClassName("increment-btn")[i].setAttribute("class", "increment-btn bg-danger");
@@ -53,15 +61,21 @@ function increment(i) {
 
     var counter = document.getElementById(`${i}`);
     counter.innerHTML = tasks[i].importance;
+
     sortVal
 }
 
 
 function sortVal() {
-    tasks.sort((a, b) => a.importance - b.importance);
+    tasks.sort((a, b) => b.importance - a.importance);
+    output()
+
     console.log(tasks);
 }
 
+// function colorB() {
+
+// }
 // <button onclick="myFunction2()">Sort Numerically</button>
 
 // <p id="demo"></p>
